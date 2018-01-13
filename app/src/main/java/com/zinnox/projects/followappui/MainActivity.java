@@ -1,11 +1,11 @@
 package com.zinnox.projects.followappui;
 
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.widget.Toast;
 
 import com.zinnox.projects.followappui.adapters.PagerAdapterHome;
 import com.zinnox.projects.followappui.adapters.TabHomeCallLog;
@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements TabHomeCallLog.On
         final PagerAdapterHome adapter = new PagerAdapterHome(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.setOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
+        Toast.makeText(this, "This is a test for PUSH", Toast.LENGTH_SHORT).show();
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
