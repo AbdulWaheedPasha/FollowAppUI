@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottom_navigation_call"
+
+          android:icon="@drawable/logo_call" />
+    <item android:id="@+id/bottom_navigation_note"
+          android:icon="@drawable/logo_note"
+          />
+    <item android:id="@+id/bottom_navigation_share"
+          android:icon="@drawable/logo_share"
+        />
+    <item android:id="@+id/bottom_navigation_delete"
+          android:icon="@drawable/logo_delete"
+          />
+</menu>

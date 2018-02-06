@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zinnox.projects.followappui">
+<manifest package="com.zinnox.projects.followappui"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -9,14 +23,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".CallDataDisplayerActivity"></activity>
+        <activity android:name=".ContactsDisplayerActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ViewFolllowAppActivity"/>
+        <activity android:name=".GroupDisplayerActivity"/>
+        <activity
+            android:name=".LogDisplayerActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".AddFolllowAppActivity"
+            android:theme="@style/ThemeForPopAdd">
+        </activity>
+        <activity
+            android:name=".CallDataDisplayerActivity"
+            android:theme="@style/ThemeForPopAdd"/>
+
+        <activity
+            android:name=".OfflineMetActivity"
+            android:label="Offline Meetings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zinnox.projects.followappui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".OfflineMetPlayRecActivity"
+            android:label="Offline Recoding"
+            android:parentActivityName=".OfflineMetActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zinnox.projects.followappui.OfflineMetActivity"/>
+        </activity>
+        <activity android:name=".CallHandler">
+        </activity>
+
     </application>
 
 </manifest>

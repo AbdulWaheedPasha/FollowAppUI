@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools" tools:context=".LogDisplayerActivity">
+    <item android:id="@+id/file"
+          android:title="menu"
+          android:icon="@drawable/option"
+          app:showAsAction="always">
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/log_contact"
+                  android:orderInCategory="100"
+                  android:title="@string/log_text_contact"
+                  android:icon="@drawable/logo_contact"
+                  app:showAsAction="never"/>
+            <item android:id="@+id/log_Call"
+                  android:orderInCategory="100"
+                  android:title="@string/log_text_Call"
+                  android:icon="@drawable/logo_call"
+                  app:showAsAction="never"/>
+            <item android:id="@+id/log_email"
+                  android:orderInCategory="100"
+                  android:title="@string/log_text_Email"
+                  android:icon="@drawable/logo_email"
+                  app:showAsAction="never"/>
+            <item android:id="@+id/log_addgroup"
+                  android:orderInCategory="100"
+                  android:title="@string/log_text_group"
+                  android:icon="@drawable/logo_group_black"
+                  app:showAsAction="never"/>
+            <item android:id="@+id/log_select_all"
+                  android:orderInCategory="100"
+                  android:title="@string/log_text_select_all"
+                  android:icon="@drawable/logo_selectall"
+                  app:showAsAction="never"/>
+            <item android:id="@+id/log_delete_all"
+                  android:orderInCategory="100"
+                  android:title="@string/log_text_Delete_all"
+                  android:icon="@drawable/logo_delete"
+                  app:showAsAction="never"/>
+        </menu>
+
+    </item>
+</menu>

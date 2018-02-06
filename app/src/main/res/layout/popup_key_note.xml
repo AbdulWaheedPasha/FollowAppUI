@@ -1,0 +1,77 @@
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#00000000"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo_key_note"/>
+                <TextView
+                    android:layout_alignBottom="@+id/keynote"
+                    android:layout_marginTop="-18dp"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="1:38"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textColor="@color/lightgrey"
+                    android:textAlignment="center"
+                    android:text="@string/keynoteplaceholder"
+                    android:inputType="textMultiLine"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/bordercolor"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/logo_call"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>

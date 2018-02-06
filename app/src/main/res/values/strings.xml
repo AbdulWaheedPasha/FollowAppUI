@@ -3,5 +3,58 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_1">Enable FollowApp</string>
+    <string name="setting_2">Use In-Call UI</string>
+    <string name="setting_3">Call Save Strategy</string>
+    <string name="setting_3.1">Record and Save All</string>
+    <string name="setting_3.2">Ask To Save</string>
+    <string name="setting_3.3">Only Group Members</string>
+    <string name="setting_4">Detect Configurations</string>
+    <string name="setting_5">Set Pin Access</string>
+    <string name="setting_6">Recording Source</string>
+    <string name="setting_7">Audio File Type</string>
+    <string name="setting_8">Call Disconnect Type</string>
+    <string name="setting_9">About v2.0</string>
 
+    //AboutApp Fragment
+    <string name="AboutApp_1">Product Tour</string>
+    <string name="AboutApp_1.1">Check out for a quick introduction</string>
+    <string name="AboutApp_2">Rate and Like Us</string>
+    <string name="AboutApp_2.1">FollowApp, Sounds Cool? Hit us with 5 star</string>
+    <string name="AboutApp_3">Invite</string>
+    <string name="AboutApp_3.1">share and recommend your friends</string>
+    <string name="AboutApp_4">Report</string>
+    <string name="AboutApp_4.1">Report for crashes or bugs and mail us.</string>
+    <string name="AboutApp_5">Privacy Policy</string>
+    <string name="AboutApp_6">About</string>
+
+    //Call Data Displayer
+    <string name="TotalContacts">78</string>
+    <string name="contact_title"> Contacts</string>
+    //Call Log Displayer
+    <string name="TotalGroups">3</string>
+    <string name="call_log_title">  Grouped Contacts</string>
+
+    //Contact menu Option
+    <string name="logo_contact">View Contact</string>
+    <string name="logo_call">Call</string>
+    <string name="logo_email">Email</string>
+    <string name="logo_share">Share</string>
+    <string name="logo_option">View All</string>
+    <string name="logo_delete">Delete All</string>
+
+    //Log menu Option
+    <string name="log_text_contact">View Contact</string>
+    <string name="log_text_Call">Call</string>
+    <string name="log_text_Email">Email</string>
+    <string name="log_text_group">Add to Group</string>
+    <string name="log_text_select_all">Select All</string>
+    <string name="log_text_Delete_all">Delete All</string>
+
+
+    //Call Data Displayer Activity
+    <string name="tap_view_one">Tap here to make a follow up</string>
+
+    //popup keynote
+    <string name="keynoteplaceholder">you can add your in call key point to the call</string>
 </resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.zinnox.projects.followappui.OfflineMetPlayRecActivity"
+              android:id="@+id/offline_met_rec_body"
+              android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:layout_margin="0dp">
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="305dp">
+        <LinearLayout
+            android:background="@drawable/offline_met_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <rm.com.audiowave.AudioWaveView
+                    android:id="@+id/wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_margin="16dp"
+                    app:animateExpansion="false"
+                    app:chunkWidth="3dp"
+                    app:chunkHeight="24dp"
+                    app:minChunkHeight="2dp"
+                    app:chunkSpacing="1dp"
+                    app:chunkRadius="1dp"
+                    app:waveColor="@android:color/white"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Untitled recording 4"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recording Now"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:textSize="21sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-70dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/circle">
+
+        <ImageView
+            android:id="@+id/keynote"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_key_note"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:layout_alignBottom="@+id/keynote"
+            android:layout_marginTop="-18dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="1:38"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:weightSum="3"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/circle">
+
+        <ImageView
+            android:onClick="PlayPauseOperation"
+            android:id="@+id/PlayPauseOperation"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo_play"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

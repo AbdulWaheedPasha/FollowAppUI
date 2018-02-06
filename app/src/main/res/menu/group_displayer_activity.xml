@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools" tools:context=".ContactsDisplayerActivity">
+    <item android:id="@+id/nav_button"
+          android:title="menu"
+          android:icon="@drawable/contact_group_fill"
+          app:showAsAction="always">
+    </item>
+</menu>
