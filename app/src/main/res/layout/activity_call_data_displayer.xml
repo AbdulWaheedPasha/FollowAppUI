@@ -1,39 +1,39 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context="com.zinnox.projects.followappui.CallDataDisplayerActivity">
 
     <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toolbar"
+        android:layout_margin="0dp"
         android:background="@color/white"
-        android:padding="10dp"
-        android:layout_margin="0dp">
+        android:padding="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/cardview_image"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
 
                 android:layout_marginRight="18dp"
-                android:src="@drawable/profile"
-                />
+                android:src="@drawable/profile" />
+
             <LinearLayout
-                android:layout_toRightOf="@+id/cardview_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginRight="50dp">
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@+id/cardview_image"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/contact_name"
@@ -41,8 +41,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:text="Zakir Hussain"
-                    android:textSize="26sp"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="26sp" />
 
                 <TextView
                     android:id="@+id/total_calls"
@@ -52,80 +52,79 @@
                     android:text="10:30PM, 12 Sep, 2017"
                     android:textColor="@color/lightgrey" />
             </LinearLayout>
-            <ImageView
-                android:layout_alignParentRight="true"
 
+            <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/ic_star_outline"/>
 
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/bordercolor"
-        />
+        android:background="@color/bordercolor" />
 
     <RelativeLayout
         android:id="@+id/Tap_here_to_make_follow_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         android:background="@color/colorPrimaryDark"
-        >
+        android:padding="5dp">
+
         <ImageView
-            android:layout_marginLeft="20dp"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_add_alert_24px"
             android:layout_alignParentLeft="true"/>
         <TextView
-            android:layout_centerInParent="true"
-            android:textSize="18sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="@string/tap_view_one"
             android:textColor="@color/white"
-            />
+            android:textSize="18sp" />
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp">
+
             <rm.com.audiowave.AudioWaveView
                 android:id="@+id/wave"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_margin="16dp"
                 app:animateExpansion="false"
-                app:chunkWidth="3dp"
                 app:chunkHeight="24dp"
-                app:minChunkHeight="2dp"
-                app:chunkSpacing="1dp"
                 app:chunkRadius="1dp"
-                app:waveColor="@android:color/black"
-                />
+                app:chunkSpacing="1dp"
+                app:chunkWidth="3dp"
+                app:minChunkHeight="2dp"
+                app:waveColor="@android:color/black" />
         </LinearLayout>
 
         <SeekBar
             android:id="@+id/seekBar3"
-            android:padding="5dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
+
             <ImageView
-                android:onClick="PlayPauseOperation"
                 android:id="@+id/play_pause_button"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -139,9 +138,9 @@
     </LinearLayout>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/expandableButton3"
@@ -175,9 +174,9 @@ An android library that brings the expandable and collapsible layouts or views o
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyler_view"
-            android:layout_below="@+id/expandableButton3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableButton3">
 
         </android.support.v7.widget.RecyclerView>
 
@@ -185,27 +184,22 @@ An android library that brings the expandable and collapsible layouts or views o
     </RelativeLayout>
 
 
-
-
-
     <FrameLayout
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="9"
-        android:id="@+id/fragmentContainer"
-        />
-    <android.support.design.widget.BottomNavigationView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="9" />
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_gravity="bottom"
-        android:background="@android:color/white"
-        app:elevation="0dp"
-        app:menu="@menu/bottom_menu"
-        android:defaultFocusHighlightEnabled="true"
         android:animateLayoutChanges="false"
-        />
+        android:background="@android:color/white"
+        android:defaultFocusHighlightEnabled="true"
+        app:elevation="0dp"
+        app:menu="@menu/bottom_menu" />
 
 </LinearLayout>
