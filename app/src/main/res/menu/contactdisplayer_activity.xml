@@ -3,7 +3,7 @@
       xmlns:tools="http://schemas.android.com/tools" tools:context=".ContactsDisplayerActivity">
     <item android:id="@+id/nav_button"
           android:title="menu"
-          android:icon="@drawable/contact_group_btn"
+          android:icon="@drawable/ic_people_outline_24px"
           app:showAsAction="always">
     </item>
 </menu>

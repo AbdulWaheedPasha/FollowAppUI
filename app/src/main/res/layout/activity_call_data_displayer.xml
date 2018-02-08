@@ -57,7 +57,7 @@
 
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/star_outline"/>
+                android:src="@drawable/ic_star_outline"/>
 
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
@@ -78,7 +78,7 @@
             android:layout_marginLeft="20dp"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/logo_note"
+            android:src="@drawable/ic_add_alert_24px"
             android:layout_alignParentLeft="true"/>
         <TextView
             android:layout_centerInParent="true"
@@ -127,13 +127,13 @@
             <ImageView
                 android:onClick="PlayPauseOperation"
                 android:id="@+id/play_pause_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/play"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_play_circle_filled_24px"/>
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/logo_key_note"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_rate_review_24px"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -145,21 +145,21 @@
 
         <Button
             android:id="@+id/expandableButton3"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#10a106"
-            android:drawableRight="@android:drawable/arrow_down_float"
+            android:background="@color/white"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_24px"
             android:onClick="expandableButton3"
             android:paddingRight="10dp"
-            android:text="Expand/Collapse Android Widgets"
-            android:textColor="#fff" />
+            android:text="Brief Information"
+            android:textColor="@color/colorPrimaryDark" />
 
         <com.github.aakira.expandablelayout.ExpandableRelativeLayout
             android:id="@+id/expandableLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/expandableButton3"
-            android:background="#9010a106"
+            android:background="@color/white"
             android:padding="16dp"
             app:ael_duration="400"
             app:ael_expanded="false"

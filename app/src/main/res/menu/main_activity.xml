@@ -3,7 +3,7 @@
       xmlns:tools="http://schemas.android.com/tools" tools:context=".LogDisplayerActivity">
     <item android:id="@+id/nav_button"
           android:title="menu"
-          android:icon="@drawable/contact_home_btn"
+          android:icon="@drawable/ic_contact_phone_24px"
           app:showAsAction="always">
     </item>
 </menu>

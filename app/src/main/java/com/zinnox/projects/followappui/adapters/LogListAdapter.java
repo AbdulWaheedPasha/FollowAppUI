@@ -43,14 +43,14 @@ public class LogListAdapter extends ArrayAdapter<String> {
         TextView session_ref = (TextView) rowView.findViewById(R.id.session);
         ImageView important_status_ref = (ImageView) rowView.findViewById(R.id.important_status);
 
-        if(call_status[position]=="incoming")
-        call_status_ref.setImageResource(R.drawable.incoming);
+        if(call_status[position]=="ic_call_received_24px")
+        call_status_ref.setImageResource(R.drawable.ic_call_received_24px);
         else
-            call_status_ref.setImageResource(R.drawable.outgoing);
+            call_status_ref.setImageResource(R.drawable.ic_call_made_24px);
         DateAndTime_ref.setText(DateAndTime[position]);
         session_ref.setText(session[position]);
         if(important_status[position])
-        important_status_ref.setImageResource(R.drawable.star_filled);
+        important_status_ref.setImageResource(R.drawable.ic_grade_24px);
 
         return rowView;
 

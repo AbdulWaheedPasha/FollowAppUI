@@ -30,7 +30,7 @@
                         android:layout_margin="5dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo_dnd"
+                        android:src="@drawable/ic_do_not_disturb_alt_24px"
                         android:layout_alignParentRight="true"/>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -103,7 +103,7 @@
                 android:layout_gravity="center"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/logo_key_note"
+                android:src="@drawable/ic_rate_review_24px"
                 android:layout_marginTop="25dp"/>
             <TextView
                 android:layout_alignBottom="@+id/keynote"
@@ -141,7 +141,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/logo_key_note"/>
+                    android:src="@drawable/ic_rate_review_24px"/>
                 <TextView
                     android:layout_alignBottom="@+id/keynote"
                     android:layout_marginTop="-18dp"
@@ -179,7 +179,7 @@
                         android:layout_marginRight="10dp"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/logo_call"
+                        android:src="@drawable/ic_call_24px"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -217,7 +217,7 @@
                 android:layout_gravity="center"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/logo_speaker"
+                android:src="@drawable/ic_volume_up_18px"
                 />
         </RelativeLayout>
 
@@ -236,7 +236,7 @@
                 android:layout_gravity="center"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/logo_call_disconnect"
+                android:src="@drawable/ic_call_end_24px"
                 />
         </RelativeLayout>
     </RelativeLayout>

@@ -56,7 +56,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/contact_call_btn"
+                android:src="@drawable/ic_call_24px"
                 />
         </RelativeLayout>
 </LinearLayout>

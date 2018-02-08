@@ -60,7 +60,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="80dp"
-            android:src="@drawable/icons_info"/>
+            android:src="@drawable/ic_info_outline_24px"/>
 
         <com.zinnox.projects.followappui.views.SwitchButton
             android:id="@+id/toggle_use_in_call"
@@ -100,7 +100,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="80dp"
-            android:src="@drawable/icons_info"/>
+            android:src="@drawable/ic_info_outline_24px"/>
 
         <ImageView
             android:layout_width="25dp"
@@ -108,7 +108,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:src="@drawable/arrowfill"/>
+            android:src="@drawable/ic_keyboard_arrow_right_24px"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -132,7 +132,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="80dp"
-            android:src="@drawable/icons_info"/>
+            android:src="@drawable/ic_info_outline_24px"/>
 
         <ImageView
             android:layout_width="25dp"
@@ -140,7 +140,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:src="@drawable/arrowfill"/>
+            android:src="@drawable/ic_keyboard_arrow_right_24px"/>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/setting_5"
@@ -204,7 +204,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="80dp"
-            android:src="@drawable/icons_info"/>
+            android:src="@drawable/ic_info_outline_24px"/>
 
         <ImageView
             android:layout_width="25dp"
@@ -212,7 +212,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:src="@drawable/arrowfill"/>
+            android:src="@drawable/ic_keyboard_arrow_right_24px"/>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/setting_7"
@@ -232,7 +232,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:src="@drawable/arrowfill"/>
+            android:src="@drawable/ic_keyboard_arrow_right_24px"/>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/setting_8"
@@ -254,7 +254,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="80dp"
-            android:src="@drawable/icons_info"/>
+            android:src="@drawable/ic_info_outline_24px"/>
 
         <ImageView
             android:layout_width="25dp"
@@ -262,7 +262,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:src="@drawable/arrowfill"/>
+            android:src="@drawable/ic_keyboard_arrow_right_24px"/>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/setting_9"
@@ -284,7 +284,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:src="@drawable/arrowfill"/>
+            android:src="@drawable/ic_keyboard_arrow_right_24px"/>
     </RelativeLayout>
 
 </LinearLayout>

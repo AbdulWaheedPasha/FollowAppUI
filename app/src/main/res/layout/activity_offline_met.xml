@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
         android:clickable="true"
-        android:src="@drawable/logo_microphone"
+        android:src="@drawable/ic_mic_24px"
         app:backgroundTint="@color/white"
         app:elevation="6dp"
         app:layout_anchor="@+id/appbar"

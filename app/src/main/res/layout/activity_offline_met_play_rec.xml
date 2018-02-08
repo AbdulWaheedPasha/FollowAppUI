@@ -76,7 +76,7 @@
             android:layout_gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo_key_note"
+            android:src="@drawable/ic_rate_review_24px"
             android:layout_marginTop="25dp"/>
         <TextView
             android:layout_alignBottom="@+id/keynote"
@@ -105,7 +105,7 @@
             android:layout_gravity="center"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/logo_play"
+            android:src="@drawable/ic_play_arrow_24px"
             />
 
 

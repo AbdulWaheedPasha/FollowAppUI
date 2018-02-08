@@ -48,7 +48,7 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:src="@drawable/logo_bookmark_outline"/>
+                android:src="@drawable/ic_bookmark_border_24px"/>
         </LinearLayout>
     </LinearLayout>
 

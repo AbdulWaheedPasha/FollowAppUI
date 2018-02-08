@@ -3,39 +3,39 @@
       xmlns:tools="http://schemas.android.com/tools" tools:context=".LogDisplayerActivity">
     <item android:id="@+id/file"
           android:title="menu"
-          android:icon="@drawable/option"
+          android:icon="@drawable/ic_more_24px"
           app:showAsAction="always">
         <!-- "file" submenu -->
         <menu>
             <item android:id="@+id/log_contact"
                   android:orderInCategory="100"
                   android:title="@string/log_text_contact"
-                  android:icon="@drawable/logo_contact"
+                  android:icon="@drawable/ic_person_18px"
                   app:showAsAction="never"/>
             <item android:id="@+id/log_Call"
                   android:orderInCategory="100"
                   android:title="@string/log_text_Call"
-                  android:icon="@drawable/logo_call"
+                  android:icon="@drawable/ic_call_24px"
                   app:showAsAction="never"/>
             <item android:id="@+id/log_email"
                   android:orderInCategory="100"
                   android:title="@string/log_text_Email"
-                  android:icon="@drawable/logo_email"
+                  android:icon="@drawable/ic_email_24px"
                   app:showAsAction="never"/>
             <item android:id="@+id/log_addgroup"
                   android:orderInCategory="100"
                   android:title="@string/log_text_group"
-                  android:icon="@drawable/logo_group_black"
+                  android:icon="@drawable/ic_group_add_18px"
                   app:showAsAction="never"/>
             <item android:id="@+id/log_select_all"
                   android:orderInCategory="100"
                   android:title="@string/log_text_select_all"
-                  android:icon="@drawable/logo_selectall"
+                  android:icon="@drawable/ic_select_all_24px"
                   app:showAsAction="never"/>
             <item android:id="@+id/log_delete_all"
                   android:orderInCategory="100"
                   android:title="@string/log_text_Delete_all"
-                  android:icon="@drawable/logo_delete"
+                  android:icon="@drawable/ic_delete_24px"
                   app:showAsAction="never"/>
         </menu>
 

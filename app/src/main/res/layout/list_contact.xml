@@ -51,7 +51,7 @@
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/contact_call"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/group_btn_add"
+                android:src="@drawable/ic_group_add_18px"
                 />
 
             <ImageView
@@ -60,7 +60,7 @@
                 android:layout_height="45dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/contact_call_btn"
+                android:src="@drawable/ic_call_24px"
                 />
         </RelativeLayout>
 

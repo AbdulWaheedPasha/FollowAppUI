@@ -97,12 +97,12 @@ public class CallDataDisplayerActivity extends AppCompatActivity
 
         ImageView PlayPauseOperation =  (ImageView) findViewById(R.id.play_pause_button);
 
-        if (PlayPauseOperation.getDrawable().getConstantState() == getResources().getDrawable( R.drawable.play).getConstantState())
+        if (PlayPauseOperation.getDrawable().getConstantState() == getResources().getDrawable( R.drawable.ic_play_circle_filled_24px).getConstantState())
         {
-            PlayPauseOperation.setImageResource(R.drawable.logo_pause);
+            PlayPauseOperation.setImageResource(R.drawable.ic_pause_circle_outline_24px);
         }
         else{
-            PlayPauseOperation.setImageResource(R.drawable.play);
+            PlayPauseOperation.setImageResource(R.drawable.ic_play_circle_filled_24px);
         }
 
     }

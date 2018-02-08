@@ -24,9 +24,9 @@ public class LogDisplayerActivity extends AppCompatActivity
     String Contact_Number="9739290007";
 
     String[] call_status ={
-            "incoming",
+            "ic_call_received_24px",
             "outgoing",
-            "incoming"
+            "ic_call_received_24px"
     };
     String[] DateAndTime ={
             "06:30PM, 04 Sep,2017",

@@ -17,7 +17,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/logo_contact"
+                android:src="@drawable/ic_access_time_24px"
                 android:layout_marginRight="10dp"
                 android:layout_toLeftOf="@+id/followup_date_and_time"/>
             <TextView
@@ -31,11 +31,10 @@
             <ImageView
                 android:layout_marginLeft="20dp"
                 android:layout_centerVertical="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/logo_bookmark_solid"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_bookmark_24px"
                 android:layout_alignParentRight="true"/>
-
 
         </RelativeLayout>
         <RelativeLayout
@@ -57,7 +56,7 @@ but yes you can add multiple lines too"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerVertical="true"
-                android:src="@drawable/logo_delete"
+                android:src="@drawable/ic_delete_24px"
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>
 

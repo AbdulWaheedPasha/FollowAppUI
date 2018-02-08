@@ -30,13 +30,13 @@ public class OfflineMetPlayRecActivity extends AppCompatActivity
 
         ImageView PlayPauseOperation =  (ImageView) findViewById(R.id.PlayPauseOperation);
 
-        if (PlayPauseOperation.getDrawable().getConstantState() == getResources().getDrawable( R.drawable.logo_play).getConstantState())
+        if (PlayPauseOperation.getDrawable().getConstantState() == getResources().getDrawable( R.drawable.ic_play_arrow_24px).getConstantState())
         {
-            PlayPauseOperation.setImageResource(R.drawable.logo_stop);
+            PlayPauseOperation.setImageResource(R.drawable.ic_stop_24px);
             Toast.makeText(getApplicationContext(),"stop logo",Toast.LENGTH_LONG).show();
         }
         else{
-            PlayPauseOperation.setImageResource(R.drawable.logo_play);
+            PlayPauseOperation.setImageResource(R.drawable.ic_play_arrow_24px);
         }
 
     }

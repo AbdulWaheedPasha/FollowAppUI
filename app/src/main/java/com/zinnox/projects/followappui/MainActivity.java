@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity implements TabHomeCallLog.On
         setSupportActionBar(toolbar);
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tablayout);
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_history_black_48dp));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_event_black_48dp));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_settings_black_48dp));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_history_24px));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_event_18px));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_settings_24px));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         Button test = new Button(this);
@@ -81,9 +81,8 @@ public class MainActivity extends AppCompatActivity implements TabHomeCallLog.On
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.nav_button) {
-            Toast.makeText(getApplication(), "nav_button", Toast.LENGTH_SHORT).show();
             Intent mainIntent = new Intent(MainActivity.this,
-                    OfflineMetActivity.class);
+                    LogDisplayerActivity.class);
             startActivity(mainIntent);
             return true;
         }

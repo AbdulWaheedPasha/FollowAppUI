@@ -48,7 +48,7 @@ public class OfflineMetActivity extends AppCompatActivity
 
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
-                R.drawable.background);
+                R.drawable.photo);
 
       // It will generate colors based on the image in an AsyncTask.
         Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
