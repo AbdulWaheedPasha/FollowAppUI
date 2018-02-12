@@ -17,40 +17,33 @@ import java.util.List;
  * Created by apple on 04/02/18.
  */
 
-public class CallKeyAdapter extends ExpandableRecyclerViewAdapter<CallKeyTitleViewHolder,CallKeyNotesViewHolder>
-{
-    public CallKeyAdapter(List<? extends ExpandableGroup> groups)
-    {
+public class CallKeyAdapter extends ExpandableRecyclerViewAdapter<CallKeyTitleViewHolder, CallKeyNotesViewHolder> {
+
+    public CallKeyAdapter(List<? extends ExpandableGroup> groups) {
         super(groups);
     }
 
     @Override
-    public CallKeyTitleViewHolder onCreateGroupViewHolder(ViewGroup parent, int viewType)
-    {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_key_title,parent,false);
+    public CallKeyTitleViewHolder onCreateGroupViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_key_title_row, parent, false);
         return new CallKeyTitleViewHolder(view);
     }
 
     @Override
-    public CallKeyNotesViewHolder onCreateChildViewHolder(ViewGroup parent, int viewType)
-    {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_key_note,parent,false);
+    public CallKeyNotesViewHolder onCreateChildViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_key_note_item, parent, false);
         return new CallKeyNotesViewHolder(view);
     }
 
     @Override
-    public void onBindChildViewHolder(CallKeyNotesViewHolder holder, int flatPosition, ExpandableGroup group, int childIndex)
-    {
+    public void onBindChildViewHolder(CallKeyNotesViewHolder holder, int flatPosition, ExpandableGroup group, int childIndex) {
         CallKeyNotes callKeyNotes = (CallKeyNotes) group.getItems().get(childIndex);
         holder.setArtistName(callKeyNotes.getNote());
         holder.setArtistTime(callKeyNotes.getTime());
-
     }
 
     @Override
-    public void onBindGroupViewHolder(CallKeyTitleViewHolder holder, int flatPosition, ExpandableGroup group)
-    {
-
+    public void onBindGroupViewHolder(CallKeyTitleViewHolder holder, int flatPosition, ExpandableGroup group) {
         holder.setGenreName(group.getTitle());
     }
 }
