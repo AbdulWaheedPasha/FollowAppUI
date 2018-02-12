@@ -61,13 +61,13 @@ public class MainActivity extends AppCompatActivity implements TabHomeCallLog.On
 
             }
         });
-
-
     }
+
     @Override
     public void onFragmentInteraction(Uri uri) {
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -81,8 +81,7 @@ public class MainActivity extends AppCompatActivity implements TabHomeCallLog.On
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.nav_button) {
-            Intent mainIntent = new Intent(MainActivity.this,
-                    LogDisplayerActivity.class);
+            Intent mainIntent = new Intent(MainActivity.this, CallDataDisplayerActivity.class);
             startActivity(mainIntent);
             return true;
         }

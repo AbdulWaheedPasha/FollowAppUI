@@ -24,7 +24,6 @@
                 android:id="@+id/cardview_image"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-
                 android:layout_marginRight="18dp"
                 android:src="@drawable/profile" />
 
@@ -51,14 +50,16 @@
                     android:layout_below="@+id/cardview_list_title"
                     android:text="10:30PM, 12 Sep, 2017"
                     android:textColor="@color/lightgrey" />
+
             </LinearLayout>
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_star_outline"/>
+                android:src="@drawable/ic_star_outline" />
 
         </RelativeLayout>
+
     </android.support.v7.widget.Toolbar>
 
     <View
@@ -76,8 +77,9 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_add_alert_24px"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_add_alert_24px" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,6 +87,7 @@
             android:text="@string/tap_view_one"
             android:textColor="@color/white"
             android:textSize="18sp" />
+
     </RelativeLayout>
 
     <LinearLayout
@@ -109,6 +112,7 @@
                 app:chunkWidth="3dp"
                 app:minChunkHeight="2dp"
                 app:waveColor="@android:color/black" />
+
         </LinearLayout>
 
         <SeekBar
@@ -128,11 +132,13 @@
                 android:id="@+id/play_pause_button"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_play_circle_filled_24px"/>
+                android:src="@drawable/ic_play_circle_filled_24px" />
+
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/ic_rate_review_24px"/>
+                android:src="@drawable/ic_rate_review_24px" />
+
         </LinearLayout>
 
     </LinearLayout>
@@ -168,8 +174,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="An android library that brings the expandable and collapsible layouts or views or widgets with various animation effect and material design color. You can include optional contents and use everywhere according to your demand.
-An android library that brings the expandable and collapsible layouts or views or widgets with various animation effect and material design color. You can include optional contents and use everywhere according to your demand" />
+                android:text="@string/an_android_library_that_brings_the_expandable_and_collapsible_layouts_or_views_or_widgets_with_various_animation_effect_and_material_design_color_you_can_include_optional_contents_and_use_everywhere_according_to_your_demand_an_android_library_that_brings_the_expandable_and_collapsible_layouts_or_views_or_widgets_with_various_animation_effect_and_material_design_color_you_can_include_optional_contents_and_use_everywhere_according_to_your_demand" />
+
         </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
         <android.support.v7.widget.RecyclerView
@@ -180,9 +186,7 @@ An android library that brings the expandable and collapsible layouts or views o
 
         </android.support.v7.widget.RecyclerView>
 
-
     </RelativeLayout>
-
 
     <FrameLayout
         android:id="@+id/fragmentContainer"

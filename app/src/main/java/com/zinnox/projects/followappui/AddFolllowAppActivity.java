@@ -11,11 +11,10 @@ import com.zinnox.projects.followappui.blurbehind.BlurBehind;
  * Created by apple on 30/01/18.
  */
 
-public class AddFolllowAppActivity extends AppCompatActivity
-{
+public class AddFolllowAppActivity extends AppCompatActivity {
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState)
-    {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         BlurBehind.getInstance()
                 .withAlpha(255)

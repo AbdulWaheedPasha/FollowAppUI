@@ -14,31 +14,29 @@ import android.widget.Toast;
 
 import com.zinnox.projects.followappui.adapters.LogListAdapter;
 
-public class LogDisplayerActivity extends AppCompatActivity
-{
-
+public class LogDisplayerActivity extends AppCompatActivity {
 
     ListView list;
-    String Contact_Name="Abrar Muqheeth";
+    String Contact_Name = "Abrar Muqheeth";
     Integer Contact_Img_id = R.drawable.profile;
-    String Contact_Number="9739290007";
+    String Contact_Number = "9739290007";
 
-    String[] call_status ={
+    String[] call_status = {
             "ic_call_received_24px",
             "outgoing",
             "ic_call_received_24px"
     };
-    String[] DateAndTime ={
+    String[] DateAndTime = {
             "06:30PM, 04 Sep,2017",
             "07:30PM, 07 Aug,2017",
             "08:30PM, 09 Oct,2017"
     };
-    String[] session ={
+    String[] session = {
             "2:30",
             "3:10",
             "4:59"
     };
-    Boolean[] important_status ={
+    Boolean[] important_status = {
             false,
             true,
             true
@@ -59,15 +57,14 @@ public class LogDisplayerActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
 
-
         //Contact ListView
-        LogListAdapter adapter=new LogListAdapter(this, call_status,DateAndTime,session,important_status);
-        list=(ListView)findViewById(R.id.log_list);
+        LogListAdapter adapter = new LogListAdapter(this, call_status, DateAndTime, session, important_status);
+        list = (ListView) findViewById(R.id.log_list);
         list.setAdapter(adapter);
 
         //Total no contact
-        TextView total_calls = (TextView)findViewById(R.id.total_calls);
-        total_calls.setText(""+list.getAdapter().getCount() + " Total calls");
+        TextView total_calls = (TextView) findViewById(R.id.total_calls);
+        total_calls.setText("" + list.getAdapter().getCount() + " Total calls");
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -75,7 +72,7 @@ public class LogDisplayerActivity extends AppCompatActivity
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 // TODO Auto-generated method stub
-                String Slecteditem= call_status[+position];
+                String Slecteditem = call_status[+position];
                 Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
 
             }
@@ -97,22 +94,22 @@ public class LogDisplayerActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.log_contact) {
-            Toast.makeText(getApplication(),"log_contact",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "log_contact", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.log_Call) {
-            Toast.makeText(getApplication(),"log_Call",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "log_Call", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.log_email) {
-            Toast.makeText(getApplication(),"log_email",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "log_email", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.log_addgroup) {
-            Toast.makeText(getApplication(),"log_addgroup",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "log_addgroup", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.log_select_all) {
-            Toast.makeText(getApplication(),"log_select_all",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "log_select_all", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.log_delete_all) {
-            Toast.makeText(getApplication(),"log_delete_all",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "log_delete_all", Toast.LENGTH_SHORT).show();
             return true;
         }
 

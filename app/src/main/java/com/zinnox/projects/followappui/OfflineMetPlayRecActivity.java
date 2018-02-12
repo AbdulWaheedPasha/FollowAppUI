@@ -9,12 +9,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class OfflineMetPlayRecActivity extends AppCompatActivity
-{
+public class OfflineMetPlayRecActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_offline_met_play_rec);
 
@@ -26,16 +24,15 @@ public class OfflineMetPlayRecActivity extends AppCompatActivity
         ll.setBackground(wallpaperDrawable);
         //END
     }
-    public void PlayPauseOperation(View v){
 
-        ImageView PlayPauseOperation =  (ImageView) findViewById(R.id.PlayPauseOperation);
+    public void PlayPauseOperation(View v) {
 
-        if (PlayPauseOperation.getDrawable().getConstantState() == getResources().getDrawable( R.drawable.ic_play_arrow_24px).getConstantState())
-        {
+        ImageView PlayPauseOperation = (ImageView) findViewById(R.id.PlayPauseOperation);
+
+        if (PlayPauseOperation.getDrawable().getConstantState() == getResources().getDrawable(R.drawable.ic_play_arrow_24px).getConstantState()) {
             PlayPauseOperation.setImageResource(R.drawable.ic_stop_24px);
-            Toast.makeText(getApplicationContext(),"stop logo",Toast.LENGTH_LONG).show();
-        }
-        else{
+            Toast.makeText(getApplicationContext(), "stop logo", Toast.LENGTH_LONG).show();
+        } else {
             PlayPauseOperation.setImageResource(R.drawable.ic_play_arrow_24px);
         }
 
