@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.zinnox.projects.followappui.R;
+import com.zinnox.projects.followappui.adapters.helper.TouchHelperAdapter;
 import com.zinnox.projects.followappui.models.CallKeyNotes;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ import java.util.ArrayList;
  * Created by Arindam Karmakar on 13/02/2018.
  */
 
-public class CallKeyNoteAdapter extends RecyclerView.Adapter {
+public class CallKeyNoteAdapter extends RecyclerView.Adapter implements TouchHelperAdapter {
 
     private static final String TAG = CallKeyNoteAdapter.class.getSimpleName();
     private ArrayList<CallKeyNotes> mCallKeyNoteList;
@@ -51,7 +52,6 @@ public class CallKeyNoteAdapter extends RecyclerView.Adapter {
         if (viewHolder instanceof NoteViewHolder) {
             final CallKeyNoteAdapter.NoteViewHolder holder = (CallKeyNoteAdapter.NoteViewHolder) viewHolder;
             final CallKeyNotes item = mCallKeyNoteList.get(position);
-
             if (item.getNote() != null && item.getTime() != null) {
                 holder.artistName.setText(item.getNote());
                 holder.artistTime.setText(item.getTime());
@@ -65,13 +65,17 @@ public class CallKeyNoteAdapter extends RecyclerView.Adapter {
     }
 
     public class NoteViewHolder extends RecyclerView.ViewHolder {
-
         private TextView artistName, artistTime;
-
         NoteViewHolder(View view) {
             super(view);
             artistName = view.findViewById(R.id.key_note_details);
             artistTime = view.findViewById(R.id.key_note_time);
         }
+    }
+
+    @Override
+    public void onItemDismiss(int position) {
+        mCallKeyNoteList.remove(position);
+        notifyItemRemoved(position);
     }
 }

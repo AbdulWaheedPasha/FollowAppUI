@@ -19,6 +19,7 @@ package com.zinnox.projects.followappui.adapters;
 import android.app.Activity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.zinnox.projects.followappui.R;
+import com.zinnox.projects.followappui.adapters.helper.OnStartDragListener;
+import com.zinnox.projects.followappui.adapters.helper.TouchHelperCallback;
 import com.zinnox.projects.followappui.models.CallKeyNotes;
 
 import java.lang.ref.WeakReference;
@@ -35,15 +38,14 @@ import java.util.ArrayList;
  * Created by Arindam Karmakar on 12/02/2018.
  */
 
-public class CallKeyTitleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class CallKeyTitleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements OnStartDragListener {
 
-    private static final String TAG = CallKeyTitleAdapter.class.getSimpleName();
     private WeakReference<Activity> mActivity;
+    private ItemTouchHelper mItemTouchHelper;
 
     private String mTitle;
     private ArrayList<CallKeyNotes> mCallKeyNoteList;
     private boolean isCollapsed = true;
-    private CallKeyNoteAdapter mNoteAdapter;
 
     public CallKeyTitleAdapter(Activity activity, String title, ArrayList<CallKeyNotes> callKeyNoteList) {
         mActivity = new WeakReference<Activity>(activity);
@@ -61,7 +63,6 @@ public class CallKeyTitleAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
         if (viewHolder instanceof TitleViewHolder) {
             final CallKeyTitleAdapter.TitleViewHolder holder = (CallKeyTitleAdapter.TitleViewHolder) viewHolder;
-
             holder.textView.setText(mTitle);
             setupNoteList(holder.recyclerView, mCallKeyNoteList);
             holder.imageView.setOnClickListener(new View.OnClickListener() {
@@ -85,11 +86,9 @@ public class CallKeyTitleAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     public class TitleViewHolder extends RecyclerView.ViewHolder {
-
         private TextView textView;
         private ImageView imageView;
         private RecyclerView recyclerView;
-
         TitleViewHolder(View view) {
             super(view);
             textView = view.findViewById(R.id.list_item_genre_name);
@@ -99,8 +98,17 @@ public class CallKeyTitleAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     private void setupNoteList(RecyclerView recyclerView, ArrayList<CallKeyNotes> mCallKeyNoteList) {
-        mNoteAdapter = new CallKeyNoteAdapter(mCallKeyNoteList);
+        CallKeyNoteAdapter adapter = new CallKeyNoteAdapter(mCallKeyNoteList);
         recyclerView.setLayoutManager(new LinearLayoutManager(mActivity.get(), LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(mNoteAdapter);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(adapter);
+        ItemTouchHelper.Callback callback = new TouchHelperCallback(adapter);
+        mItemTouchHelper = new ItemTouchHelper(callback);
+        mItemTouchHelper.attachToRecyclerView(recyclerView);
+    }
+
+    @Override
+    public void onStartDrag(RecyclerView.ViewHolder viewHolder) {
+        mItemTouchHelper.startDrag(viewHolder);
     }
 }
