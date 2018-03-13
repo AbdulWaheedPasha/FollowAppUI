@@ -23,5 +23,10 @@ public class AddFolllowAppActivity extends AppCompatActivity {
 
         setContentView(R.layout.popup_add_followup);
 
+
+
+
     }
+
+
 }

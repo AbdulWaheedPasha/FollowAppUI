@@ -16,11 +16,14 @@
 
 package com.zinnox.projects.followappui.adapters;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.zinnox.projects.followappui.R;
 import com.zinnox.projects.followappui.adapters.helper.TouchHelperAdapter;
@@ -28,12 +31,10 @@ import com.zinnox.projects.followappui.models.CallKeyNotes;
 
 import java.util.ArrayList;
 
-/**
- * Created by Arindam Karmakar on 13/02/2018.
- */
 
-public class CallKeyNoteAdapter extends RecyclerView.Adapter implements TouchHelperAdapter {
-
+public class CallKeyNoteAdapter extends RecyclerView.Adapter implements TouchHelperAdapter
+{
+    private Context context;
     private static final String TAG = CallKeyNoteAdapter.class.getSimpleName();
     private ArrayList<CallKeyNotes> mCallKeyNoteList;
 
@@ -42,21 +43,39 @@ public class CallKeyNoteAdapter extends RecyclerView.Adapter implements TouchHel
     }
 
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.list_key_note_item, viewGroup, false);
         return new CallKeyNoteAdapter.NoteViewHolder(view);
     }
 
+
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
+    public void onBindViewHolder(ViewHolder viewHolder, final int position) {
+
         if (viewHolder instanceof NoteViewHolder) {
             final CallKeyNoteAdapter.NoteViewHolder holder = (CallKeyNoteAdapter.NoteViewHolder) viewHolder;
             final CallKeyNotes item = mCallKeyNoteList.get(position);
             if (item.getNote() != null && item.getTime() != null) {
                 holder.artistName.setText(item.getNote());
                 holder.artistTime.setText(item.getTime());
+
             }
+            holder.artistName.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+
+                    Toast.makeText(v.getContext(), "new test = "+ String.valueOf(position) + v.toString(), Toast.LENGTH_SHORT).show();
+                    LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+                }
+            });
+
         }
+
+
+
     }
 
     @Override
@@ -64,7 +83,7 @@ public class CallKeyNoteAdapter extends RecyclerView.Adapter implements TouchHel
         return mCallKeyNoteList == null ? 0 : mCallKeyNoteList.size();
     }
 
-    public class NoteViewHolder extends RecyclerView.ViewHolder {
+    public class NoteViewHolder extends ViewHolder {
         private TextView artistName, artistTime;
         NoteViewHolder(View view) {
             super(view);
@@ -78,4 +97,8 @@ public class CallKeyNoteAdapter extends RecyclerView.Adapter implements TouchHel
         mCallKeyNoteList.remove(position);
         notifyItemRemoved(position);
     }
+
+
+
+
 }

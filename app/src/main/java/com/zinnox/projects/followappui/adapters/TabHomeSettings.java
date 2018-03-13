@@ -82,7 +82,7 @@ public class TabHomeSettings extends Fragment {
 
 
         //operatoins on all the settings
-        final View InputFragmentView = inflater.inflate(R.layout.setting, container, false);
+        final View InputFragmentView = inflater.inflate(R.layout.tab_home_setting, container, false);
         final SGPickerView pickerView = (SGPickerView) InputFragmentView.findViewById(R.id.pickerView);
         final RelativeLayout settingxml = (RelativeLayout)InputFragmentView.findViewById(R.id.settingxml);
         RelativeLayout setting3 = (RelativeLayout)InputFragmentView.findViewById(R.id.setting_3);

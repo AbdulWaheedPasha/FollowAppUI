@@ -54,6 +54,7 @@
             </LinearLayout>
 
             <ImageView
+                android:layout_alignParentRight="true"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/ic_star_outline" />
@@ -187,6 +188,9 @@
         </android.support.v7.widget.RecyclerView>
 
     </RelativeLayout>
+
+
+
 
     <FrameLayout
         android:id="@+id/fragmentContainer"

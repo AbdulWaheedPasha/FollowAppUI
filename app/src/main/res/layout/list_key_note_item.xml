@@ -26,7 +26,6 @@
             android:layout_toRightOf="@+id/key_note_time"
             android:text="This is First Key Point"
             android:textColor="@color/colorPrimaryDark" />
-
     </RelativeLayout>
 
 </FrameLayout>

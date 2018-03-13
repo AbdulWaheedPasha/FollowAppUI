@@ -34,9 +34,7 @@ import com.zinnox.projects.followappui.models.CallKeyNotes;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-/**
- * Created by Arindam Karmakar on 12/02/2018.
- */
+
 
 public class CallKeyTitleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements OnStartDragListener {
 
